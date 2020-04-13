@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Ứng dụng vui DoYouLoveMe</title>
+
+
+</head>
+<body>
+
+<h1 style="position:absolute; left:220px; top:175px;">Do you love me?</h1>
+<input type="button" value=" YES " onclick="yesClick()" style="position:absolute; left:285px; top:235px;"/>
+<input type="button" id="missclick" value="  NO  " onmouseover="missClick()" style="position:absolute; left:360px; top:235px;"/>
+
+<script>
+    function yesClick() {
+        alert("I love you, too");
+    }
+    function missClick() {
+        let a = Math.round(Math.random() * window.innerWidth);
+        let b = Math.round(Math.random() * window.innerHeight);
+        document.getElementById("missclick").style.left = a + 'px';
+        document.getElementById("missclick").style.top = b + 'px';
+    }
+
+</script>
+</body>
+</html>
+© 2020 GitHub, Inc.
+</body>
+</html>
